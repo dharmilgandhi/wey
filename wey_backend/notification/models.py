@@ -7,16 +7,11 @@ from post.models import Post
 
 
 class Notification(models.Model):
-    NEWFRIENDREQUEST = 'new_friendrequest'
-    ACCEPTEDFRIENDREQUEST = 'accepted_friendrequest'
-    REJECTEDFRIENDREQUEST = 'rejected_friendrequest'
     POST_LIKE = 'post_like'
     POST_COMMENT = 'post_comment'
 
     CHOICES_TYPE_OF_NOTIFICATION = (
-        (NEWFRIENDREQUEST, 'New friendrequest'),
-        (ACCEPTEDFRIENDREQUEST, 'Accepted friendrequest'),
-        (REJECTEDFRIENDREQUEST, 'Rejected friendrequest'),
+
         (POST_LIKE, 'Post like'),
         (POST_COMMENT, 'Post comment')
     )
